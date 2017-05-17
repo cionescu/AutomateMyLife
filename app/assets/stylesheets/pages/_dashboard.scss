@@ -1,0 +1,16 @@
+dashboard {
+  margin-top: 1rem;
+  display: block;
+}
+
+notification {
+  display: block;
+  div {
+    height: 160px;
+    width: 150px;
+    background-image: image-url('pusheen.png');
+    background-repeat: no-repeat;
+    border: 1px solid #bdbdbd;
+    border-radius: 15px;
+  }
+}

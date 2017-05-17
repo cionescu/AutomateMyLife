@@ -5,11 +5,13 @@ import { RoutingModule } from './routing.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
