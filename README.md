@@ -7,4 +7,4 @@ My plans include:
 * Twilio SMS notification when a button is pressed
 * ActionCable Chat for daily notifications
 * Shopping list (and probably a generalised ToDo list)
-* Integration with (Atrato)[https://github.com/atratobris] to manage our smart devices
+* Integration with [Atrato](https://github.com/atratobris) to manage our smart devices
