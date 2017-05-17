@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'rack-cors', require: 'rack/cors'
 gem 'turbolinks', '~> 5'
+gem 'devise'
 # gem 'therubyracer', platforms: :ruby
 
 # API
