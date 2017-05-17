@@ -1,24 +1,10 @@
-# README
+# Automate My Life
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a Rails 5.1 (with Webpacker and Angular2) for a mobile-responsive web application that will hopefully automate my life. I'm going to use this with my partner to sync on chores and other duties.
 
-Things you may want to cover:
+My plans include:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Twilio SMS notification when a button is pressed
+* ActionCable Chat for daily notifications
+* Shopping list (and probably a generalised ToDo list)
+* Integration with (Atrato)[https://github.com/atratobris] to manage our smart devices
