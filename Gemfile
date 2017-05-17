@@ -11,13 +11,21 @@ end
 gem 'rails', '~> 5.1.1'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'rack-cors', require: 'rack/cors'
 gem 'turbolinks', '~> 5'
 gem 'devise'
 # gem 'therubyracer', platforms: :ruby
+
+# Assets
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails', '~> 5.0'
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails'
 
 # API
 gem 'active_model_serializers', '~> 0.10.5'
@@ -31,6 +39,7 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'binding_of_caller'
   gem 'rspec-rails', '~> 3.5'
   gem 'spring-commands-rspec'
   gem 'webmock', require: false
