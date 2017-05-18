@@ -1,11 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { RoutingModule } from './routing.module';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotificationComponent } from './notification/notification.component';
+
+import { NotificationService } from './notification/notification.service';
 
 @NgModule({
   declarations: [
@@ -15,9 +18,12 @@ import { NotificationComponent } from './notification/notification.component';
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    NotificationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

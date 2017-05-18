@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotificationService } from './notification.service';
 
 @Component({
   selector: 'notification',
@@ -7,10 +8,12 @@ import { Component } from '@angular/core';
   `
 })
 export class NotificationComponent {
-  constructor() {
+  constructor(private notificationService: NotificationService) {
   }
 
   notification(): void {
-    console.log("Notification");
+    this.notificationService.create().then(() => {
+      console.log("Created");
+    });
   }
 }

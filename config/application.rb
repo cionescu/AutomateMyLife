@@ -23,7 +23,8 @@ module Lizncata
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        # to be decided later
+        origins 'localhost:3000'
+        resource '*', headers: :any, methods: [:post, :options, :put, :delete]
       end
     end
   end
