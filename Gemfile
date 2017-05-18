@@ -15,6 +15,8 @@ gem 'webpacker'
 gem 'rack-cors', require: 'rack/cors'
 gem 'turbolinks', '~> 5'
 gem 'devise'
+gem 'twilio-ruby', '~> 4.11.1'
+gem 'config'
 # gem 'therubyracer', platforms: :ruby
 
 # Assets
