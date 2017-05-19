@@ -5,7 +5,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class NotificationService {
-  private apiUrl = 'http://localhost:3000/api/notification';
+  private apiUrl = `${(<any>window).Config.api}/api/notification`;
 
   private headers = new Headers({'Content-Type': 'application/json'});
 
