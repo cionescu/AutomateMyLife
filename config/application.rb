@@ -23,7 +23,7 @@ module Lizncata
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'localhost:3000'
+        origins 'localhost:3000', 'lizncata.herokuapp.com'
         resource '*', headers: :any, methods: [:post, :options, :put, :delete]
       end
     end
