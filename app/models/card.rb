@@ -19,4 +19,9 @@
 class Card < ApplicationRecord
   belongs_to :creator, class_name: 'User'
   belongs_to :receiver, class_name: 'User'
+
+  enum status: {
+    pending: 0,
+    completed: 1
+  }
 end

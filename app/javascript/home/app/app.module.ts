@@ -8,15 +8,18 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotificationComponent } from './notification/notification.component';
 import { CardComponent } from './card/card.component';
+import { CreateCardComponent } from './card/create-card.component';
 
 import { NotificationService } from './notification/notification.service';
+import { UserService } from './user/user.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     NotificationComponent,
-    CardComponent
+    CardComponent,
+    CreateCardComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { NotificationService } from './notification/notification.service';
     HttpModule
   ],
   providers: [
-    NotificationService
+    NotificationService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
