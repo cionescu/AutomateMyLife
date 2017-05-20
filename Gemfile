@@ -54,7 +54,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'annotate'
+  gem 'annotate', git: 'https://github.com/ctran/annotate_models.git'
   gem 'better_errors'
   gem 'awesome_print'
   gem 'web-console', '>= 3.3.0'
