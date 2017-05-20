@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a data-confirm="Are you sure?" data-method="delete" href="/users/sign_out" class="nav-link" rel="nofollow">Sign Out</a>
+            <a data-method="delete" href="/users/sign_out" class="nav-link" rel="nofollow">Sign Out</a>
           </li>
         </ul>
       </div>

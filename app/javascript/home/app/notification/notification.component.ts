@@ -13,7 +13,7 @@ export class NotificationComponent {
 
   notification(): void {
     this.notificationService.create().then(() => {
-      console.log("Created");
+      (<any>window).swal("Success!", "Cererea ta a fost trimisa", "success");
     });
   }
 }

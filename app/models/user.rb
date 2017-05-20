@@ -19,6 +19,7 @@
 #  updated_at             :datetime         not null
 #  partner_id             :integer
 #  notification_text      :string
+#  card_count             :integer          default(0)
 #
 # Indexes
 #
