@@ -11,7 +11,7 @@ home {
     margin: 0 -15px 0 -15px;
     line-height: 56px;
 
-    a.navbar-brand {
+    a.navbar-brand, a.navbar-brand:focus {
       display: inline-block;
       margin-right: 1rem;
       font-size: 1.5rem;
@@ -22,7 +22,7 @@ home {
     }
 
   }
-  .navbar-light .navbar-nav .nav-link {
+  .navbar-light .navbar-nav .nav-link, .nav-link:focus {
     color: white;
   }
 }

@@ -7,6 +7,7 @@ import { RoutingModule } from './routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotificationComponent } from './notification/notification.component';
+import { CardComponent } from './card/card.component';
 
 import { NotificationService } from './notification/notification.service';
 
@@ -14,7 +15,8 @@ import { NotificationService } from './notification/notification.service';
   declarations: [
     AppComponent,
     DashboardComponent,
-    NotificationComponent
+    NotificationComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

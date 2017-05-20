@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="row">
       <div class="col-6">
+        <a class="btn btn-info craving-card-link" routerLink="/card">Craving Cards</a>
       </div>
       <div class="col-6">
         <notification></notification>
