@@ -71,7 +71,6 @@ GEM
       autoprefixer-rails (>= 6.0.3)
       sass (>= 3.4.19)
     builder (3.2.3)
-    byebug (9.0.6)
     case_transform (0.2)
       activesupport
     childprocess (0.7.0)
@@ -155,9 +154,6 @@ GEM
       spoon (~> 0.0)
     pry-rails (0.3.6)
       pry (>= 0.10.4)
-    pry-remote (0.1.8)
-      pry (~> 0.9)
-      slop (~> 3.0)
     public_suffix (2.0.5)
     puma (3.8.2)
     puma (3.8.2-java)
@@ -307,7 +303,6 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap (~> 4.0.0.alpha6)
-  byebug
   config
   devise
   factory_girl_rails
@@ -318,7 +313,6 @@ DEPENDENCIES
   morpheus-heroku (= 0.2.3)
   pg (~> 0.18)
   pry-rails
-  pry-remote
   puma (~> 3.7)
   rack-cors
   rails (~> 5.1.1)

@@ -27,5 +27,7 @@ module Lizncata
         resource '*', headers: :any, methods: [:post, :options, :put, :delete]
       end
     end
+
+    config.exceptions_app = self.routes
   end
 end

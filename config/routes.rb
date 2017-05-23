@@ -10,5 +10,7 @@ Rails.application.routes.draw do
     end
   end
 
+  match '*path', to: "application#try_with_angular", via: :all
+
   root to: "home#index"
 end

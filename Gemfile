@@ -41,13 +41,11 @@ gem 'faraday', '~> 0.11.0'
 gem 'rails_12factor', group: :production
 
 group :development, :test do
-  gem 'byebug', platform: :mri
-  gem 'binding_of_caller'
+  # gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.5'
   gem 'spring-commands-rspec'
   gem 'webmock', require: false
   gem 'pry-rails'
-  gem 'pry-remote'
   gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'simplecov', '~> 0.14.1', require: false
@@ -57,6 +55,7 @@ end
 group :development do
   gem 'annotate', git: 'https://github.com/ctran/annotate_models.git'
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'awesome_print'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
