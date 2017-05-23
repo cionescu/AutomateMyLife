@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'create-card',
   template: `
-    <div class="card">
+    <div class="card craving-card">
       <p class="text-muted text-center">
         Adauga un Craving Card. Orice iti doresti, la orice ora. Livrat special si exclusiv de {{user.partner_name}}.
       </p>
