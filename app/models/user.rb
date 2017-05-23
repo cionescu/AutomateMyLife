@@ -34,5 +34,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  belongs_to :partner, class_name: 'User'
+  belongs_to :partner, class_name: 'User', required: false
 end
