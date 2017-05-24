@@ -13,6 +13,7 @@ import { CreateCardComponent } from './card/create-card.component';
 
 import { NotificationService } from './notification/notification.service';
 import { UserService } from './user/user.service';
+import { CardService } from './card/card.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { UserService } from './user/user.service';
   ],
   providers: [
     NotificationService,
-    UserService
+    UserService,
+    CardService
   ],
   bootstrap: [AppComponent]
 })

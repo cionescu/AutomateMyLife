@@ -35,4 +35,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :partner, class_name: 'User', required: false
+  has_many :created_cards, class_name: 'Card', foreign_key: 'creator_id'
 end

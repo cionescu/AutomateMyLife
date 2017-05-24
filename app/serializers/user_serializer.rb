@@ -4,4 +4,9 @@ class UserSerializer < ActiveModel::Serializer
   def partner_name
     object.partner&.name
   end
+
+  def card_count
+    # object.card_count - object.cards.count
+    0
+  end
 end
