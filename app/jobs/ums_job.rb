@@ -21,8 +21,6 @@ class UmsJob < ApplicationJob
   private
 
   def send_message message
-    Rails.logger.warn "Going to send SMS: #{message}"
-    return
     [
       '+40727338573',
       '+40741628279'
