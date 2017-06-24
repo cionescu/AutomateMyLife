@@ -14,6 +14,8 @@ class UmsJob < ApplicationJob
         Rails.logger.warn "Nu s-a schimbat nimic la #{subject} | Nota #{marks[subject]}"
       end
     end
+
+    LIZ.update!(metadata: marks)
   end
 
   private
