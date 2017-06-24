@@ -4,7 +4,7 @@
 #
 #  id          :integer          not null, primary key
 #  text        :string
-#  status      :integer          default(0)
+#  status      :integer          default("pending")
 #  creator_id  :integer
 #  receiver_id :integer
 #  created_at  :datetime         not null

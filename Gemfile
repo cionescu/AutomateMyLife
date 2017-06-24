@@ -17,7 +17,8 @@ gem 'turbolinks', '~> 5'
 gem 'devise'
 gem 'twilio-ruby', '~> 4.11.1'
 gem 'config'
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
+gem 'selenium-webdriver'
 
 # Assets
 

@@ -5,11 +5,11 @@ class TwilioSms
     @client = Twilio::REST::Client.new
   end
 
-  def sms
+  def sms body: "", to: ""
     client.account.messages.create(
       from: '+16174097366',
-      to: '+40741628279',
-      body: 'Te sarut!'
+      to: to,
+      body: body
     )
   end
 end

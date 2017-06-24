@@ -12,8 +12,7 @@ module Api
     def card_params
       params
         .require(:card)
-        .permit(:text)
-        .merge(user_id: current_user.id)
+        .permit(:text, :user_id)
     end
   end
 end

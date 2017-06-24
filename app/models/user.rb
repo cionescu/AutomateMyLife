@@ -20,6 +20,7 @@
 #  partner_id             :integer
 #  notification_text      :string
 #  card_count             :integer          default(0)
+#  metadata               :jsonb
 #
 # Indexes
 #
