@@ -7,7 +7,7 @@ MorpheusHeroku.configure do |config|
   # config.database_name = "database_development"
 
   # Show debugging events
-  # config.log_events = false
+  config.log_events = false
 
   # Your development email. Will not scramble emails containing this string
   # config.dev_email = "dev@blah.com"
