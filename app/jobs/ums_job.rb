@@ -23,7 +23,7 @@ class UmsJob < ApplicationJob
   def send_message message
     [
       '+40727338573',
-      '+40741628279'
+      # '+40741628279'
     ].each do |number|
       TwilioSms.new.sms(body: message, to: number)
     end

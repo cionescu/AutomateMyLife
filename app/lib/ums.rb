@@ -3,7 +3,9 @@ class Ums
   attr_reader :driver
 
   def initialize
-    @driver = Selenium::WebDriver.for :phantomjs
+    options = Selenium::WebDriver::Chrome::Options.new
+    options.add_argument('--headless')
+    @driver = Selenium::WebDriver.for :chrome, options: options
   end
 
   def run
