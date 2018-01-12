@@ -19,6 +19,7 @@ gem 'twilio-ruby', '~> 5.6.0'
 gem 'config', '~> 1.6.1'
 gem 'therubyracer', platforms: :ruby
 gem 'selenium-webdriver', '~> 3.8.0'
+gem 'nokogiri', '~> 1.8.1'
 
 # Assets
 
