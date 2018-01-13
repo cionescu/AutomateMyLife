@@ -50,13 +50,13 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'simplecov', '~> 0.15.1', require: false
+  gem 'awesome_print', '~> 1.8.0', require: 'awesome_print'
 end
 
 group :development do
   gem 'annotate', '~> 2.7.2'
   gem 'better_errors'
   gem 'binding_of_caller', '~> 0.8.0'
-  gem 'awesome_print', '~> 1.8.0'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'

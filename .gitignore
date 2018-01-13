@@ -25,4 +25,7 @@ config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
 
+app/lib/data.yml
+app/lib/post.rb
+
 public/assets
