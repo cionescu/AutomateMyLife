@@ -6,7 +6,7 @@ class TwilioSms
   end
 
   def sms body: "", to: ""
-    client.account.messages.create(
+    client.messages.create(
       from: Settings.twilio_phone_number,
       to: to,
       body: body
