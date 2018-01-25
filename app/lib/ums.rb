@@ -5,7 +5,7 @@ class Ums
   def initialize
     options = Selenium::WebDriver::Chrome::Options.new
     options.add_argument('--headless')
-    Selenium::WebDriver::Chrome.driver_path = `which chromedriver`.strip
+    options.binary = ENV['GOOGLE_CHROME_SHIM'] if ENV['GOOGLE_CHROME_SHIM']
     @driver = Selenium::WebDriver.for :chrome, options: options
   end
 
