@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  resources :marks, only: [:index]
+
   namespace :api do
     resources :user, only: [:show]
     resources :card, only: [:create]
