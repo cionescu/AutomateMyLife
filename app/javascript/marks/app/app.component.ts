@@ -9,11 +9,13 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
           <thead>
             <tr>
               <th>Materia</th>
+              <th>Credite</th>
               <th>Nota</th>
+              <th>Dupa Mariri</th>
             </tr>
           </thead>
           <tbody>
-            <tr table-row *ngFor="let row of marks" [entry]="row"></tr>
+            <tr table-row *ngFor="let row of marks" [entry]="row" (markChanged)="handleMarkChanged($event)"></tr>
             <tr total [marks]="marks"></tr>
           </tbody>
         </table>
@@ -26,5 +28,14 @@ export class AppComponent {
 
   constructor() {
     this.marks = (<any>window).marks
+    for (let i = 0; i < this.marks.length; i++) {
+      this.marks[i][3] = 0
+    }
+  }
+
+  handleMarkChanged({entry, value}) {
+    const id = this.marks.findIndex((item) => item[0] === entry)
+    this.marks[id][3] = parseInt(value, 10)
+    console.log(this.marks)
   }
 }

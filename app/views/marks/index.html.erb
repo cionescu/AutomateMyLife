@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  window.marks = <%= raw @marks.to_a.to_json %>
+  window.marks = <%= raw @marks.map{ |k, v| [k, v["mark"], v["credits"]] }.sort_by{ |i| i.last }.reverse.to_json %>
 </script>
 
 <marks>Loading...</marks>
