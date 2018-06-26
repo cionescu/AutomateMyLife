@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :user, only: [:show]
     resources :card, only: [:create]
+    resources :marks, only: [:update]
     resources :notification, only: [:create] do
       collection do
         post :twilio
