@@ -5,8 +5,15 @@ class Ums
   def initialize
     options = Selenium::WebDriver::Chrome::Options.new
     options.add_argument('--headless')
+    options.add_argument('--ignore-certificate-errors')
+    options.add_argument('--disable-popup-blocking')
+    options.add_argument('--disable-translate')
     options.binary = ENV['GOOGLE_CHROME_SHIM'] if ENV['GOOGLE_CHROME_SHIM']
-    @driver = Selenium::WebDriver.for :chrome, options: options
+    @driver = if Rails.env.development?
+      Selenium::WebDriver.for :chrome, options: options
+    else
+      Selenium::WebDriver.for :chrome, options: options
+    end
   end
 
   def run
@@ -50,8 +57,12 @@ class Ums
 
       subject = cols[3].text
       mark = cols[6].text.to_i
+      credits = cols[8].text.to_i
 
-      marks[subject] = mark
+      marks[subject] = {
+        'mark' => mark,
+        'credits' => credits
+      }
     end
     marks
   end

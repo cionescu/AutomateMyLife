@@ -7,11 +7,11 @@ class UmsJob < ApplicationJob
     marks = Ums.new.run
 
     LIZ.metadata.keys.each do |subject|
-      if marks[subject].to_i != LIZ.metadata[subject].to_i
-        message = "S-au afisat notele la #{subject}. Ai luat #{marks[subject]}."
+      if marks.dig(subject, 'mark').to_i != LIZ.metadata.dig(subject, 'mark').to_i
+        message = "S-au afisat notele la #{subject}. Ai luat #{marks.dig(subject, 'mark')}."
         send_message message
       else
-        Rails.logger.warn "Nu s-a schimbat nimic la #{subject} | Nota #{marks[subject]}"
+        Rails.logger.warn "Nu s-a schimbat nimic la #{subject} | Nota #{marks.dig(subject, 'mark')}"
       end
     end
 
@@ -21,6 +21,10 @@ class UmsJob < ApplicationJob
   private
 
   def send_message message
+    if Rails.env.development?
+      puts(message)
+      return
+    end
     [
       '+40727338573',
       # '+40741628279'

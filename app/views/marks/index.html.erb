@@ -1,7 +1,7 @@
 <script type="text/javascript">
-  window.marks = <%= raw @marks.to_json %>
+  window.marks = <%= raw @marks.to_a.to_json %>
 </script>
 
-<marks data="<%= raw @marks %>">Loading...</marks>
+<marks>Loading...</marks>
 
 <%= javascript_pack_tag 'marks' %>

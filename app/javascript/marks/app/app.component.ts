@@ -3,14 +3,28 @@ import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 @Component({
   selector: 'marks',
   template: `
-    <h1>Trivia</h1>
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Materia</th>
+              <th>Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr table-row *ngFor="let row of marks" [entry]="row"></tr>
+            <tr total [marks]="marks"></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   `
 })
 export class AppComponent {
-  @Input() data: any;
+  public marks: any;
 
   constructor() {
-    console.log(this.data)
-    console.log((<any>window).marks)
+    this.marks = (<any>window).marks
   }
 }
